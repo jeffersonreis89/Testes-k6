@@ -7,8 +7,8 @@ export default function(){
 
     console.log(`response body length ${res.body.length} for VU =  ${__VU} ITERA = ${__ITER}`)
      
-    if(!check(res, {
+    check(res, {
         'status in code 200': (r) => r.status === 200,
         'body size is 45 bytes :' : (r) => r.body.length == 45,
-    }));
+    });
 }
