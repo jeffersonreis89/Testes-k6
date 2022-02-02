@@ -10,6 +10,7 @@ export default function () {
       "Content-Type": "application/json",
     },
   };
+}
 
   const response = http.get(url, headerParam);
 
@@ -26,5 +27,3 @@ export default function () {
       'is Message is Sucess ' : (r) => JSON.parse(r.body).Message === "Data fetched successufully"
   })
 
-
-}
